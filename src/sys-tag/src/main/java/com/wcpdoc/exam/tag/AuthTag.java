@@ -39,12 +39,12 @@ public class AuthTag extends TagSupport {
 		}
 
 		// 如果当前用户的权限不包含当前的链接，则不显示。
-		@SuppressWarnings("unchecked")
+		/*@SuppressWarnings("unchecked")
 		Map<Integer, Long> userAuthMap = (Map<Integer, Long>) session.getAttribute(ConstantManager.USER_AUTH_MAP);
 		if (userAuthMap.get(res.getAuthPos()) == null 
 				|| (userAuthMap.get(res.getAuthPos()) & res.getAuthCode()) == 0) {
 			return SKIP_BODY;
-		}
+		}*/
 
 		// 放行。
 		return EVAL_BODY_INCLUDE;
